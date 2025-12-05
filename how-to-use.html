@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="몇초남았지 앱 사용방법 - 설치부터 사용까지">
+    <title>사용방법 - 몇초남았지</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">몇초남았지</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="index.html#features">기능</a></li>
+                <li><a href="index.html#regions">지원 지역</a></li>
+                <li><a href="index.html#download">다운로드</a></li>
+                <li><a href="how-to-use.html" class="active">사용방법</a></li>
+                <li><a href="privacy-policy.html">개인정보처리방침</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>사용방법</h1>
+            <p>몇초남았지 앱을 효과적으로 사용하는 방법을 안내합니다.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="guide-section">
+                <h2>📥 1. 앱 다운로드 및 설치</h2>
+                <div class="step">
+                    <h3>iOS (아이폰)</h3>
+                    <ol>
+                        <li>App Store에서 "몇초남았지" 검색</li>
+                        <li>"받기" 버튼을 눌러 다운로드</li>
+                        <li>설치가 완료되면 앱 아이콘을 탭하여 실행</li>
+                    </ol>
+                    <p class="note">💡 <strong>참고:</strong> iOS 14.0 이상 필요</p>
+                </div>
+                <div class="step">
+                    <h3>Android (안드로이드)</h3>
+                    <ol>
+                        <li>Google Play 스토어에서 "몇초남았지" 검색</li>
+                        <li>"설치" 버튼을 눌러 다운로드</li>
+                        <li>설치가 완료되면 "열기" 버튼을 눌러 실행</li>
+                    </ol>
+                    <p class="note">💡 <strong>참고:</strong> Android 8.0 (Oreo) 이상 필요</p>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h2>🚀 2. 첫 실행 및 권한 설정</h2>
+                <div class="step">
+                    <h3>Step 1: 위치 권한 허용</h3>
+                    <p>앱을 처음 실행하면 위치 접근 권한을 요청합니다.</p>
+                    <div class="permission-box">
+                        <p><strong>"몇초남았지"가 위치에 접근하도록 허용하시겠습니까?</strong></p>
+                        <ul>
+                            <li>✅ <strong>"앱 사용 중에만 허용"</strong> 또는 <strong>"항상 허용"</strong> 선택 (권장)</li>
+                            <li>❌ "허용 안 함"을 선택하면 앱을 사용할 수 없습니다</li>
+                        </ul>
+                    </div>
+                    <p class="note">💡 <strong>왜 필요한가요?</strong> 주변 신호등 정보를 표시하려면 현재 위치를 파악해야 합니다.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Step 2: GPS 활성화</h3>
+                    <p>정확한 위치 파악을 위해 GPS를 켜주세요.</p>
+                    <ul>
+                        <li><strong>iOS:</strong> 설정 → 개인정보 보호 → 위치 서비스 → 켜기</li>
+                        <li><strong>Android:</strong> 설정 → 위치 → 켜기</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h2>🗺️ 3. 메인 화면 사용하기</h2>
+                <div class="step">
+                    <h3>지도 화면 이해하기</h3>
+                    <div class="feature-explain">
+                        <h4>🟢 녹색 원형 마커</h4>
+                        <p>보행자 신호가 <strong>녹색(건너도 됨)</strong>인 횡단보도입니다.</p>
+                        <ul>
+                            <li>마커 안에 표시된 숫자는 <strong>잔여 시간(초)</strong></li>
+                            <li>예: "25" → 25초 후에 빨간불로 바뀜</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-explain">
+                        <h4>🔴 빨간색 원형 마커</h4>
+                        <p>보행자 신호가 <strong>빨간색(건너면 안 됨)</strong>인 횡단보도입니다.</p>
+                        <ul>
+                            <li>마커 안에 표시된 숫자는 <strong>잔여 시간(초)</strong></li>
+                            <li>예: "45" → 45초 후에 초록불로 바뀜</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-explain">
+                        <h4>📍 내 위치 버튼</h4>
+                        <p>지도 우측 하단의 버튼을 누르면 현재 위치로 이동합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h2>⚙️ 4. 설정하기</h2>
+                <div class="step">
+                    <h3>설정 메뉴 열기</h3>
+                    <p>지도 화면 우측 상단의 <strong>⚙️ 설정 아이콘</strong>을 탭합니다.</p>
+                </div>
+
+                <div class="step">
+                    <h3>지역 수동 설정 (선택 사항)</h3>
+                    <p>앱이 자동으로 지역을 감지하지만, 필요시 수동으로 변경할 수 있습니다.</p>
+                    <ul>
+                        <li><strong>서울:</strong> 실시간 C-ITS 데이터 (가장 정확)</li>
+                        <li><strong>대전:</strong> 시뮬레이션 (실제 신호와 오차 있을 수 있음)</li>
+                        <li><strong>하남:</strong> 시뮬레이션 (실제 신호와 오차 있을 수 있음)</li>
+                    </ul>
+                    <p class="note">💡 <strong>팁:</strong> 대부분의 경우 자동 감지를 그대로 사용하는 것이 좋습니다.</p>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h2>💡 5. 사용 팁</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>🎯 정확한 위치</h3>
+                        <p>실내보다는 야외에서, GPS 신호가 잘 잡히는 곳에서 사용하면 더 정확합니다.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🔋 배터리 절약</h3>
+                        <p>백그라운드에서는 위치 추적을 하지 않으므로 배터리 소모가 적습니다.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📶 네트워크 연결</h3>
+                        <p>실시간 신호 정보를 받으려면 인터넷 연결(Wi-Fi 또는 모바일 데이터)이 필요합니다.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🚦 시뮬레이션 지역</h3>
+                        <p>대전/하남은 시뮬레이션이므로 실제 신호와 최대 ±10초 오차가 있을 수 있습니다.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🔄 지도 확대/축소</h3>
+                        <p>지도를 핀치(두 손가락)로 확대하면 더 많은 신호등을 볼 수 있습니다.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>⏱️ 실시간 업데이트</h3>
+                        <p>서울 지역은 매 초마다 실시간으로 업데이트되어 가장 정확한 정보를 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h2>❓ 6. 자주 묻는 질문 (FAQ)</h2>
+                <div class="faq">
+                    <details>
+                        <summary>신호등이 지도에 표시되지 않아요</summary>
+                        <div class="faq-answer">
+                            <p>다음 사항을 확인해주세요:</p>
+                            <ul>
+                                <li>위치 권한이 허용되어 있는지 확인</li>
+                                <li>GPS가 켜져 있는지 확인</li>
+                                <li>인터넷 연결 상태 확인</li>
+                                <li>서울/대전/하남 지원 지역 내에 있는지 확인</li>
+                                <li>지도를 충분히 확대했는지 확인</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>잔여 시간이 정확하지 않아요</summary>
+                        <div class="faq-answer">
+                            <p><strong>서울 지역:</strong> C-ITS 실시간 데이터를 사용하므로 매우 정확합니다. 오차가 있다면 인터넷 연결 상태를 확인해주세요.</p>
+                            <p><strong>대전/하남 지역:</strong> 신호 주기 기반 시뮬레이션이므로 실제 신호와 최대 ±10초 오차가 있을 수 있습니다.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>배터리 소모가 많지 않나요?</summary>
+                        <div class="faq-answer">
+                            <p>아니요. 앱이 백그라운드에 있을 때는 위치 추적을 하지 않습니다. 앱을 사용하는 동안만 GPS와 네트워크를 사용하므로 배터리 효율적입니다.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>다른 지역에서도 사용할 수 있나요?</summary>
+                        <div class="faq-answer">
+                            <p>현재는 서울, 대전, 하남만 지원합니다. 향후 경기도, 부산 등 다른 지역으로 확장할 예정입니다. 원하시는 지역이 있다면 피드백을 보내주세요!</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>개인정보는 어떻게 관리되나요?</summary>
+                        <div class="faq-answer">
+                            <p>위치 정보는 서버에 저장되지 않으며, 오직 주변 신호등 정보를 표시하는 용도로만 사용됩니다. 자세한 내용은 <a href="privacy-policy.html">개인정보처리방침</a>을 참고해주세요.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h2>📞 7. 문의하기</h2>
+                <div class="contact-box">
+                    <p>추가로 궁금한 사항이나 문제가 있으신가요?</p>
+                    <ul>
+                        <li><strong>이메일:</strong> <a href="mailto:techt8127@gmail.com">techt8127@gmail.com</a></li>
+                        <li><strong>GitHub Issues:</strong> <a href="https://github.com/chongchong2/greenpass.github.io/issues" target="_blank">문제 신고하기</a></li>
+                    </ul>
+                    <p>버그 리포트나 기능 제안은 언제든 환영합니다! 😊</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>몇초남았지</h3>
+                    <p>보지 않고도 알 수 있는 내 손안의 실시간 신호등</p>
+                </div>
+                <div class="footer-section">
+                    <h4>링크</h4>
+                    <ul>
+                        <li><a href="how-to-use.html">사용방법</a></li>
+                        <li><a href="privacy-policy.html">개인정보처리방침</a></li>
+                        <li><a href="https://github.com/chongchong2/greenpass.github.io" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:techt8127@gmail.com">techt8127@gmail.com</a></li>
+                        <li><a href="https://github.com/chongchong2/greenpass.github.io/issues" target="_blank">Issue Tracker</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 몇초남았지. All rights reserved. | MIT License</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
